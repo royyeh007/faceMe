@@ -6,6 +6,9 @@ module.exports = {
     '@babel/polyfill', // enables async-await
     './client/index.js'
   ],
+  node: {
+  fs: 'empty'
+},
   output: {
     path: __dirname,
     filename: './public/bundle.js'
@@ -20,6 +23,12 @@ module.exports = {
         test: /\.jsx?$/,
         exclude: /node_modules/,
         loader: 'babel-loader'
+      },{
+        test: /\.css$/,
+        use: [
+          'style-loader',
+          'css-loader'
+        ]
       }
     ]
   }

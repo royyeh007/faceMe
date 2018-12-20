@@ -1,5 +1,6 @@
 body {
   font-family: sans-serif;
+  background-image: url("https://i.pinimg.com/originals/22/05/68/220568ed4e83c98f2a390a0e3d92efb3.jpg");
 }
 
 a {
@@ -18,4 +19,88 @@ nav a {
 form div {
   margin: 1em;
   display: inline-block;
+}
+* {
+  margin: 0;
+  padding: 0;
+  font-family: Helvetica, Arial, sans-serif;
+}
+
+.demo-title {
+  position: absolute;
+  width: 100%;
+  background: #2e2f33;
+  z-index: 2;
+  padding: .7em 0;
+}
+
+.demo-title a {
+  color: #fff;
+  border-bottom: 1px dotted #a64ceb;
+  text-decoration: none;
+}
+
+.demo-title p {
+  color: #fff;
+  text-align: center;
+  text-transform: lowercase;
+  font-size: 15px;
+}
+
+.demo-frame {
+  background: url(frame.png) no-repeat;
+  width: 854px;
+  height: 658px;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  margin: -329px 0 0 -429px;
+  padding: 95px 20px 45px 34px;
+  overflow: hidden;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  -ms-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+.container {
+  width: 100%;
+  height: 530px;
+  position: relative;
+  background: #eee;
+  overflow: hidden;
+  border-bottom-right-radius: 10px;
+  border-bottom-left-radius: 10px;
+}
+
+.dg.ac {
+  z-index: 100 !important;
+  top: 50px !important;
+}
+
+.canvas {
+  top: 0;
+  left: 0;
+  margin-left: 230px;
+  margin-top: 120px;
+  position: absolute;
+}
+.cameraOutput {
+  top: 0;
+  left: 0;
+  margin-left: 230px;
+  margin-top: 120px;
+  position: absolute;
+}
+#canvas {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  margin-left: -393px;
+  margin-top: -147px;
+  color:black;
+}
+img{
+  height: 320;
+  width: 400;
 }
